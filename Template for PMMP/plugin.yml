@@ -1,0 +1,46 @@
+#Name of your plugin.（プラグインの名前）
+name: %{PluginName}
+
+#Your plugin's main class namespace will usually be the same as the folder path.（フォルダーパス\Mainの形になるように書きましょう。）
+main: %{Namespace}\Main
+
+#Version Name（適当なバージョンナンバー）
+version: 0.0.1
+
+#API version that your plugin supports.（あなたのプラグインに対応されているAPIバージョンを書きましょう。）
+api: %{ApiVersion}
+
+#When to load the plugin. [STARTUP, POSTWORLD]（このプラグインの読み込むタイミングを設定します。STARTUP: 読み込み時にプラグインをロード | POSTWORLD: ワールドに接続したときにプラグインをロード（通常POSTWORLD））
+load: POSTWORLD
+
+#Name of the person who wrote the plugin.（このプラグインを書いた人の名前を書きましょう。）
+author: %{AuthorName}
+
+#Description of what the plugin is or does.（このプラグインの説明を書きましょう。）
+description: Template plugin by [MazaiCrafty, Pocketmine-MP]
+
+#Website for your plugin.（あなたのプラグインのWEBサイトを書きましょう。未記入可。）
+website: https://github.com/Neko74
+
+#Commands that your plugin has.（実装されたコマンドの設定を行います）
+commands:
+  #Description to show in the Help command（ヘルプに表示されるメッセージ）
+  description: "Template Plugin"
+  #Usage message shown to the user if they type the command in incorrectly.（使い方を表示します）
+  usage: "/example"
+  #Permission required to execute the command. This should be the name of a permission defined in the section below.（パーミッションを設定するため、適当な名前を設定します。）
+  permission: example.command
+
+#Define permissions used in your plugin here. You can check whether permissibles have permissions in your plugin to allow or disallow actions such as command execution.（実行することができる権限を設定します）
+permissions:
+ #Root permission node
+ template:
+  #Default state of this permission. `op` means that only server operators will have this permission by default.
+  default: true
+  #Description of what the permission does or doesn't allow.
+  description: "Example root permission node"
+  #Child permission nodes. If the parent permission node is true, the children will have the values set here. If false, all child permissions will be inverted.
+  children:
+   example.command:
+    default: true
+    description: "Allows the use of /example"
