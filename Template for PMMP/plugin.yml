@@ -17,10 +17,14 @@ load: POSTWORLD
 author: %{AuthorName}
 
 #Description of what the plugin is or does.（このプラグインの説明を書きましょう。）
-description: Template plugin by [MazaiCrafty, Pocketmine-MP]
+description: 1145141919810
+#Example
+# description: Template plugin by [MazaiCrafty, Pocketmine-MP]
 
 #Website for your plugin.（あなたのプラグインのWEBサイトを書きましょう。未記入可。）
-website: https://github.com/Neko74
+website:
+#Example
+# website: https://github.com/MazaiCrafty
 
 #Commands that your plugin has.（実装されたコマンドの設定を行います）
 commands:
